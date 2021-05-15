@@ -8,14 +8,14 @@ import './Navbar.css';
 export default function NavBar() {
     return (
         <header className="navbar">
-            <Link to="/">
+
                 <div classname="logo"></div>
-            </Link>
+
             <nav>
                 <ul className="list">
                     <li className="list-item">
-                        <NavLink exact to="/" >Home</NavLink>
-                        <NavLink to="/favs" >Favoritas</NavLink>
+                        <a className="link"><NavLink exact to="/" >home</NavLink></a>
+                        <a className="link"><NavLink to="/favs" >favoritas</NavLink></a>
                     </li>
                 </ul>
             </nav>

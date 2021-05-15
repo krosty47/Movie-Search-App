@@ -17,11 +17,13 @@
 
 .navbar div{
     content:url('../../Movie-1.png');
-    padding-left: 1200px;
+    padding-left: 1360px;
     padding-top: 10px;
 }
 
-
+.li{
+    display:inline-block;
+}
 
 .list {
     margin: 0;
@@ -42,14 +44,25 @@
 }
 
 .list-item a {
+    text-decoration: none;
     color: white;
     height: 100%;
-    padding: 16px 10px;
+    padding: 0px 20px;
     border-bottom: 4px solid transparent;
+
+    font-family: 'Girassol', cursive;
+    font-size: 40px;
 }
 
-.list-item a:hover,
-.list-item a.active {
-    background-color: #808080;
-    color: white;
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+.link:hover::after{
+    width: 100%;
+    transition: width .3s;
 }
